@@ -13,8 +13,7 @@ A jQuery page that appears with a user clicks and external link! use it to show 
  WordPress Exit Box kicks-in when a visitor clicks an external link on your website, instead of just following the link and losing the visitor, your Exit Box is displayed in a jQuery Box. The content of your exit box is fully customizable, and you can design it to meet your goals.
 
   <h3>Why Should you use Wordpress Exit Box?</h3>
-  <ol>
-    <li>
+<ol><li>
       <strong>Monetize outgoing links</strong>
       : Your Exit Box is a great spot to show ads, make special offers, or promote a high converting product.
     </li>
