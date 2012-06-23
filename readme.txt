@@ -28,7 +28,7 @@ A jQuery page that appears with a user clicks and external link! use it to show 
     <li>
       <strong>Display disclaimer messages</strong>
       : Warn your visitors that they’re about to leave your website, and offer them to chance to go back, or select another destination.
-    </li>
+    </li></ul>
 
 A premium version of Exit Box is also available, it will bring you many great features like the option to select from 3 jQuery Boxes, Social sharing shortcodes, a javascript count down timer, and much much more. <a  href="http://codecanyon.net/item/wordpress-exit-box/2291033?ref=angrybyte"> More details here!</a> 	
 
