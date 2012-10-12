@@ -3,7 +3,7 @@ Contributors: Bouzid Nazim Zitouni
 Donate link:http://angrybyte.com/donate
 Tags: jQuery,exit,external,nofollow,monetize,ads,redirect,link,thickbox,href,seo
 Requires at least: 3.0
-Tested up to: 3.4
+Tested up to: 3.4.2
 Stable tag: 1.5
 
 A jQuery page that appears with a user clicks and external link! use it to show messages, ads, or social buttons. 
