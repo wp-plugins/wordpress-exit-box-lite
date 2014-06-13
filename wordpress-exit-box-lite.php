@@ -3,14 +3,14 @@
 /**
  * @package Wordpress Exit Box Lite
  * @author Bouzid Nazim Zitouni
- * @version 1.11
+ * @version 1.12
  */
 /*
 Plugin Name: Wordpress Exit Box Lite
 Plugin URI: http://angrybyte.com/wordpress-plugins/wordpress-exit-box-finally-released/
 Description: Wordpress exit box is used design and display your exit box, a ThickBox page that will be shown to your users when they click a external link.
 Author: Bouzid Nazim Zitouni
-Version: 1.11
+Version: 1.12
 Author URI: http://angrybyte.com
 */
 
@@ -262,8 +262,8 @@ function replacelinks($content)
         $myurl = get_option('siteurl');
 
         $url = $wp_query->query_vars['xb'];
-        $url = urldecode($url);
-
+      //  $url = urldecode($url);
+          $url = "http" . urldecode($url); //to bypass http forbidden rule on some servers
         //block possible code injection attempts
         $m2 = strpos(" " . $url, "<");
         $m3 = strpos(" " . $url, "$");
@@ -366,13 +366,14 @@ function widgetreplacelinks($content)
 
             }
             $newlink = str_replace($xurl, $xurl2, $match);
-            
+            $newlink = str_replace("xb=http","xb=", $newlink); //to bypass HTTP forbidden issue on some servers
             $newlink = str_replace("<a ", "<a {$exitboxvals['tag']} ", $newlink);
             if (!strpos($newlink, "nofollow"))
             {
                 $newlink = str_replace("<a ", '<a rel="nofollow" ', $newlink);
             }
             $content = str_ireplace($match, $newlink, $content);
+
         }
     }
 

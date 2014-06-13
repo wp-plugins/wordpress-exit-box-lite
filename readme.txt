@@ -3,7 +3,7 @@ Contributors: Bouzid Nazim Zitouni
 Donate link:http://angrybyte.com/donate
 Tags: jQuery,exit,external,nofollow,monetize,ads,redirect,link,thickbox,href,seo
 Requires at least: 3.0
-Tested up to: 3.6
+Tested up to: 3.9
 Stable tag: 1.5
 
 A jQuery page that appears with a user clicks and external link! use it to show messages, ads, or social buttons. 
@@ -41,3 +41,4 @@ A premium version of Exit Box is also available, it will bring you many great fe
 
 == Changelog ==
 1.00 : WordPress Exit Box Lite Unleashed!<br />
+1.14 : fixed an issue on some servers causing a forbidden message to be displayed in the box!<br />
