@@ -3,14 +3,14 @@
 /**
  * @package Wordpress Exit Box Lite
  * @author Bouzid Nazim Zitouni
- * @version 1.12
+ * @version 1.13
  */
 /*
 Plugin Name: Wordpress Exit Box Lite
 Plugin URI: http://angrybyte.com/wordpress-plugins/wordpress-exit-box-finally-released/
 Description: Wordpress exit box is used design and display your exit box, a ThickBox page that will be shown to your users when they click a external link.
 Author: Bouzid Nazim Zitouni
-Version: 1.12
+Version: 1.13
 Author URI: http://angrybyte.com
 */
 
@@ -19,13 +19,13 @@ if(!function_exists('add_action')){
     die;
 }
 add_option("exitboxcontents",
-    '<h2 style="text-align: center;">It was nice having you! We hope you enjoyed your stay.</h2>',
+    '<h2 style="text-align: center;">It was nice having you! We hope that you enjoyed your stay.</h2>',
     'Contents of the Exit page', 'yes');
 add_option("exitboxdelay", '15', 'yes');
 add_option("boxautoredirect", '0', 'yes');
 
-add_option("exitboxwidth", '630', 'yes'); //just needed with thickbox
-add_option("exitboxheight", '440', 'yes'); //just needed with thickbox
+add_option("exitboxwidth", '630', 'yes'); 
+add_option("exitboxheight", '440', 'yes'); 
 
 add_filter('the_content', 'widgetreplacelinks');
 add_action('wp_head', 'boxautoredirect');
